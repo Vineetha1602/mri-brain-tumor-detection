@@ -1,0 +1,11 @@
+Accuracy with 120 clusters: 76.47%
+Accuracy with 100 clusters: 76.47%
+Accuracy with 110 clusters: 78.43%
+Accuracy with 120 clusters: 76.47%
+Accuracy with 130 clusters: 80.39%
+Accuracy with 140 clusters: 80.39%
+Accuracy with 150 clusters: 76.47%
+Accuracy with 160 clusters: 74.51%
+Accuracy with 170 clusters: 86.27%
+Accuracy with 180 clusters: 82.35%
+Accuracy with 190 clusters: 80.39%
