@@ -1,4 +1,4 @@
-## Brain Tumor Classification Pipeline
+# Brain Tumor Classification Pipeline
 
 This project implements an image classification pipeline to detect brain tumors using SIFT feature extraction, KMeans clustering, and an SVM classifier. The dataset used for training and testing consists of MRI images classified into 'normal' and 'cancer' categories.
 
