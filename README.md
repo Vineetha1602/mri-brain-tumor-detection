@@ -2,27 +2,27 @@
 
 This project implements an image classification pipeline to detect brain tumors using SIFT feature extraction, KMeans clustering, and an SVM classifier. The dataset used for training and testing consists of MRI images classified into 'normal' and 'cancer' categories.
 
-### Features
+## Features
 
-SIFT (Scale-Invariant Feature Transform): Extracts distinctive features from images.
+- SIFT (Scale-Invariant Feature Transform): Extracts distinctive features from images.
 
-KMeans Clustering: Groups the extracted features into visual words (clusters) to create a histogram for each image.
+- KMeans Clustering: Groups the extracted features into visual words (clusters) to create a histogram for each image.
 
-SVM (Support Vector Machine): Classifies the images based on the visual words histogram.
+- SVM (Support Vector Machine): Classifies the images based on the visual words histogram.
 
-### Structure
+## Structure
 
 The project is split into the following four parts:
 
-Image Loader: Handles image preprocessing (grayscale conversion) and loading.
+- Image Loader: Handles image preprocessing (grayscale conversion) and loading.
 
-Feature Extractor: Extracts SIFT descriptors from the images.
+- Feature Extractor: Extracts SIFT descriptors from the images.
 
-KMeans Encoder: Applies KMeans clustering to create a visual vocabulary and constructs histograms for each image.
+- KMeans Encoder: Applies KMeans clustering to create a visual vocabulary and constructs histograms for each image.
 
-SVM Classifier: Standardizes the histograms, splits the data, and trains the SVM classifier.
+- SVM Classifier: Standardizes the histograms, splits the data, and trains the SVM classifier.
 
-### Dataset
+## Dataset
 
 The dataset used in this project is the [Brain MRI Images for Brain Tumor Detection](https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection) dataset available on Kaggle. This dataset contains brain MRI images categorized into two classes:
 
@@ -30,7 +30,7 @@ The dataset used in this project is the [Brain MRI Images for Brain Tumor Detect
 
 - Tumor: MRI images with tumor presence.
 
-### Requirements
+## Requirements
 
 To run this project, you need the following dependencies:
 
@@ -52,7 +52,7 @@ pip install opencv-python scikit-learn numpy
 
 <!------------------>
 
-### Directory Structure
+## Directory Structure
 
 ```bash
 /brain-tumor-classification
@@ -70,7 +70,7 @@ pip install opencv-python scikit-learn numpy
 
 <!------------------>
 
-### Files
+## Files
 
 1. image_loader.py
    Contains functions to preprocess and load images from the dataset.
@@ -109,7 +109,7 @@ pip install opencv-python scikit-learn numpy
 5. main.py
    Coordinates the workflow by calling the functions from all the above files. Loads data, extracts features, applies KMeans clustering, and trains/evaluates the SVM classifier.
 
-### Usage
+## Usage
 
 1. Prepare your dataset
 
@@ -154,7 +154,7 @@ pip install opencv-python scikit-learn numpy
 
    <!------------------>
 
-### Results
+## Results
 
 The accuracy of the classifier can vary based on the number of clusters used in the KMeans step, the quality of the data, and other factors. To improve the accuracy, you can:
 
